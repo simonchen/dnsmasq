@@ -1,6 +1,10 @@
 name: Cross-Release
 
-on: [push]
+# on events
+on:
+  release:
+    types: 
+        - created
 
 jobs:
   build_mips:
