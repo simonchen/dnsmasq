@@ -482,11 +482,12 @@ int main (int argc, char **argv)
 	baduser = daemon->scriptuser;
     }
 #endif
-  
+  /* Remove user validation // [2023-1-25]
   if (daemon->username && !(ent_pw = getpwnam(daemon->username)))
     baduser = daemon->username;
   else if (daemon->groupname && !(gp = getgrnam(daemon->groupname)))
     baduser = daemon->groupname;
+  */
 
   if (baduser)
     die(_("unknown user or group: %s"), baduser, EC_BADCONF);
