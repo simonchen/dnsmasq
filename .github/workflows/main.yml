@@ -19,6 +19,18 @@ jobs:
           - target: "mipsel-unknown-linux-gnu"
             image_tag: "linux-mipsel-lts"
             container_name: "mipsel-release"
+          - target: "armv5-unknown-linux-gnueabi"
+            image_tag: "linux-armv5"
+            container_name: "linux-armv5-release"
+          - target: "armv6-unknown-linux-gnueabihf"
+            image_tag: "linux-armv6"
+            container_name: "linux-armv6-release"
+          - target: "armv7-unknown-linux-gnueabi"
+            image_tag: "linux-armv7"
+            container_name: "linux-armv7-release"     
+          - target: "x86_64-buildroot-linux-gnu"
+            image_tag: "linux-x86_64-full"
+            container_name: "linux-x86_64-release"
     steps:
     - uses: actions/checkout@v3
     - name: MIPS Little Endian x32
