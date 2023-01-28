@@ -1,6 +1,8 @@
 
 This is forked from `git clone git://thekelleys.org.uk/dnsmasq.git ` (v2.89)
 
+** Remove user validation. **
+
 **An important upgrade to optimise large numbers of --server options**
 ```
 	Optimise reading large numbers of --server options. When re-reading
