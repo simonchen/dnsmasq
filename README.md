@@ -1,9 +1,11 @@
 
 This is forked from `git clone git://thekelleys.org.uk/dnsmasq.git ` (v2.89)
 
-**The user validation is removed**
+- **Cross-compiling (statically)**
 
-**An important upgrade to optimise large numbers of --server options**
+- **The user validation is removed**
+
+- **An important upgrade to optimise large numbers of --server options**
 ```
 	Optimise reading large numbers of --server options. When re-reading
 	upstream servers from /etc/resolv.conf or other sources that
