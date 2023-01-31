@@ -1,7 +1,7 @@
 
 This is forked from `git clone git://thekelleys.org.uk/dnsmasq.git ` (v2.89)
 
-- **Cross-compiling (statically)**
+- **Cross-compiling (stand-alone executable)**
 
 - **The user validation is removed**
 
